@@ -1,0 +1,29 @@
+JSON
+
+[POST]
+/Users
+SaveUser
+
+{
+  "name": "Juan",
+  "lastname": "Lopez"
+}
+
+[PUT]
+/Users/{Id}
+UpdateUser
+
+{
+  "name": "Guille",
+  "lastname": "Kallap"
+}
+
+[GET]
+/Users/{Id}
+GetUserById
+
+{
+  "id": 1,
+  "name": "John",
+  "lastname": "Doe"
+}

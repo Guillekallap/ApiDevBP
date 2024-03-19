@@ -4,5 +4,39 @@
         <name>ApiDevBP</name>
     </assembly>
     <members>
+        <member name="M:ApiDevBP.Controllers.UsersController.GetUsers">
+            <summary>
+            Obtiene todos los usuarios en la base.
+            </summary>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.GetUserById(System.Int32)">
+            <summary>
+            Obtiene un usuario por su ID.
+            </summary>
+            <param name="id">ID del usuario a buscar.</param>
+            <returns> Usuario correspondiente al ID.</returns>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.SaveUser(ApiDevBP.Models.UserModel)">
+            <summary>
+            Guarda un nuevo usuario en la base de datos.
+            </summary>
+            <param name="userModel">Datos ingresados por el usuario.</param>
+            <returns> True si se guardó correctamente sino False.</returns>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.UpdateUser(System.Int32,ApiDevBP.Models.UserModel)">
+            <summary>
+            Actualiza un usuario existente por su ID.
+            </summary>
+            <param name="id">ID ingresado del usuario a actualizar.</param>
+            <param name="userModel"> Datos ingresados por el usuario.</param>
+            <returns> True si se actualizó correctamente sino False.</returns>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Elimina un usuario por su ID.
+            </summary>
+            <param name="id">ID ingresado del usuario a eliminar.</param>
+            <returns> True si se eliminó correctamente sino False.</returns>
+        </member>
     </members>
 </doc>
